@@ -1,21 +1,3 @@
-<!-- top header start -->
-<div class="pa-top-header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="pa-header-address">
-                    <p><span>Address:</span> 25 LNB Devonshire Street London W1G 7AE</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="pa-header-call">
-                    <p>Emergency Call :<span> +001 4567891236</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- top header end -->
 <!-- main header start -->
 <div class="pa-main-header">
     <div class="container-fluid">
