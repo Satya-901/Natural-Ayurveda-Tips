@@ -50,23 +50,6 @@
                     </span>
                 </div>
             </div>
-            <!-- <span class="mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, porro? Quia repellendus optio dolorum
-                tenetur reiciendis odio dolores consequuntur recusandae hic ullam. Odit eos, assumenda perferendis unde
-                adipisci ab ea aperiam sequi dolores, provident explicabo accusamus rem aut expedita itaque pariatur
-                ipsum totam aliquam voluptate est. Dolore iusto culpa illo, ab expedita numquam dolorum! Cumque
-                blanditiis sequi facere amet doloribus atque expedita vel perferendis cupiditate nobis impedit repellat
-                nihil alias, quam distinctio! Tempore nemo maiores sed. Ipsam dolore quisquam praesentium ad, labore
-                officia qui et magni maiores? Inventore ullam quia sequi sunt accusamus qui quaerat hic, voluptas non
-                ipsam commodi repudiandae rerum repellat illo eum dolores quibusdam amet, totam obcaecati eveniet
-                praesentium animi magni. Nam maxime sunt ad magni consequatur veniam quis inventore vitae neque? Alias
-                incidunt, iure repudiandae dolor quis reiciendis illum temporibus quisquam a odio necessitatibus placeat
-                neque commodi possimus, nulla labore expedita aliquid dolorem provident fuga at. Architecto alias
-                perferendis veritatis tenetur dolore. Odit optio officia non, cum repellendus consequuntur ipsa vitae
-                iure rerum possimus unde alias accusantium. Iste reprehenderit alias eos ad cumque sed et aliquam quam,
-                ullam odio rerum iure at totam error dolore adipisci ratione sint modi reiciendis dolorum voluptatem.
-                Nobis eum deleniti impedit.
-            </span> -->
         </div>
     </div>
 </div>
