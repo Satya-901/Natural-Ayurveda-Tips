@@ -24,15 +24,17 @@
                     <p>We want you to love the products that you buy from us. If you are not satisfied with your
                         purchase, please contact us within 2 days of delivery.</p>
                     <p>To initiate a return or replacement, drop us an email at <a
-                            href="mailto:support@sparkeytips.com">support@sparkeytips.com</a> with “Returns and
+                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> with
+                        “Returns and
                         Replacement” as the subject. Our team will get back to you promptly.</p>
                 </div>
 
                 <div class="policy-section">
                     <h3>Wrong Item Received</h3>
                     <p>If you received the wrong item, please contact us within 2 days of delivery by emailing us at <a
-                            href="mailto:support@sparkeytips.com">support@sparkeytips.com</a> or calling us at <a
-                            href="tel:+17861994455">786-199-4455</a>. Our Customer Delight team will resolve the issue
+                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or calling
+                        us at <a href="tel:+919718832501">971883-2501</a>. Our Customer Delight team will resolve the
+                        issue
                         as soon as possible.</p>
                 </div>
 
@@ -40,8 +42,8 @@
                     <h3>Damaged Item Received</h3>
                     <p>If your item arrives damaged, please notify us within 2 days of delivery. Send an email with your
                         order ID and a picture of the damaged product to <a
-                            href="mailto:support@sparkeytips.com">support@sparkeytips.com</a> or call <a
-                            href="tel:+17861994455">786-199-4455</a>. Our customer delight team will assist you with
+                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or call <a
+                            href="tel:+919718832501">971883-2501</a>. Our customer delight team will assist you with
                         your query and resolve it promptly.</p>
                 </div>
 
