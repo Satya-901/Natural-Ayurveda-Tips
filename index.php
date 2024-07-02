@@ -142,7 +142,7 @@
         <div class="pa-heading">
             <h1 class="text-light">top products</h1>
         </div>
-        <div class="row">
+        <div class="row" style="justify-content: center;">
             <?php
             $limit = 10;
             $page = (isset($_GET['_page']) && $_GET['_page'] > 0) ? $_GET['_page'] - 1 : 0;
