@@ -1,12 +1,6 @@
 <?php include_once ('includes/head.php'); ?>
 <?php include_once ('includes/header.php'); ?>
 
-<!-- banner -->
-
-<!-- <div class="test-bg">
-    
-</div> -->
-
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -254,7 +248,6 @@
     </div>
 </div>
 
-
 <div class="pa-counter spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
@@ -360,7 +353,6 @@
     </div>
 </div>
 
-<!-- tesimonial start -->
 <div class="pa-tesimonial spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
@@ -374,7 +366,7 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets/images/testi1.jpg" alt="image" class="img-fluid" />
+                                <img src="assets\img\testimonials\testimonial-1.jpg" alt="image" class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2> Ravi Shankar</h2>
@@ -387,7 +379,7 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets/images/testi1.jpg" alt="image" class="img-fluid" />
+                                <img src="assets\img\testimonials\testimonial-2.jpg" alt="image" class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Nikhil Maurya</h2>
@@ -400,7 +392,7 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets/images/testi1.jpg" alt="image" class="img-fluid" />
+                                <img src="assets\img\testimonials\testimonial-3.jpg" alt="image" class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Vikram Singh</h2>
@@ -413,7 +405,7 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets/images/testi1.jpg" alt="image" class="img-fluid" />
+                                <img src="assets\img\testimonials\testimonial-4.jpg" alt="image" class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Kavita Sharma</h2>
@@ -426,7 +418,7 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets/images/testi1.jpg" alt="image" class="img-fluid" />
+                                <img src="assets\img\testimonials\testimonial-5.jpg" alt="image" class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Meera Jain</h2>
@@ -446,8 +438,7 @@
         </div>
     </div>
 </div>
-<!-- tesimonial end -->
-<!-- blog start -->
+
 <div class="pa-blog spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
@@ -528,6 +519,5 @@
         </div>
     </div>
 </div>
-<!-- blog end -->
 
 <?php include_once ('includes/footer.php'); ?>
