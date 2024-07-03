@@ -41,7 +41,7 @@
                             <a href="shipping-policy.php">shipping policy</a>
                         </li>
                         <li>
-                            <a href="return-policy.php">Return Policy</a>
+                            <a href="return-policy.php">Return & Refund Policy</a>
                         </li>
                     </ul>
                 </div>
