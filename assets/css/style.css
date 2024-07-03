@@ -1033,8 +1033,8 @@ p.pa-product-rating {
     width: 8px;
     height: 8px;
     background: rgba(255, 0, 0, 0);
-    border-top: 7px double var(--pureayurveda-primary);
-    border-right: 7px double var(--pureayurveda-primary);
+    border-top: 7px double white;
+    border-right: 7px double #fff;
     transform: rotate(45deg);
     bottom: 0;
     margin: auto;
@@ -1560,8 +1560,6 @@ p.pa-product-rating {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
     padding: 30px;
     border-radius: 10px;
-    transform: translate(-130px, 36px);
-    z-index: 1;
     position: relative;
     background: #fff;
 }
@@ -1572,6 +1570,14 @@ p.pa-product-rating {
     border-radius: 10px;
     transition: 0.3s;
     margin-bottom: 30px;
+}
+
+.newsletter-box {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    background: #fff;
 }
 
 .pa-contact-box:hover {
@@ -1585,6 +1591,10 @@ p.pa-product-rating {
 
 .pa-contact-box p {
     margin-bottom: 0px;
+}
+
+.map {
+    border-radius: 10px;
 }
 
 .response {

@@ -20,7 +20,8 @@
         <div class="policy-content">
             <ul>
                 <li>Reach out to our support team with your order details on <a
-                        href="mailto:support@sparkeytips.com">support@sparkeytips.com</a> or call us 7861994455.</li>
+                        href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or call us
+                    7861994455.</li>
                 <li>In case you have cancelled an order, which has already been handed over to the courier company on
                     our end, they may still attempt delivery. Kindly do not accept the delivery of the order.</li>
                 <li>Once we receive the product(s) back and verify its packaging/condition, we will refund your money
@@ -33,7 +34,8 @@
                 <li>If you have received an item in a damaged/defective condition or have been sent a wrong product, you
                     can initiate return/refund within 5 (five) days of receiving the order.</li>
                 <li>Reach out to our support team with your order details on <a
-                        href="mailto:support@sparkeytips.com">support@sparkeytips.com</a> with the following details:
+                        href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> with the
+                    following details:
                 </li>
                 <ul>
                     <li>Order ID details</li>

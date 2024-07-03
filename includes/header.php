@@ -18,7 +18,7 @@
                             <li><a href="products.php">Products</a></li>
                             <li><a href="blog.php">Blog</a></li>
                             <li><a href="testimonials.php">Testimonials</a></li>
-                            <li><a href="contact.php">Consult a doctor</a></li>
+                            <li><a href="contact-us.php">Consult a doctor</a></li>
                         </ul>
                     </div>
                     <div class="pa-head-icon">
