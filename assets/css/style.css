@@ -233,17 +233,9 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.test-bg {
-    background-image: url('../img/test-banner.png');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    font-size: 2rem;
+.carousel-item img {
+    width: 1200px;
+    object-fit: cover;
 }
 
 /* main header end */
