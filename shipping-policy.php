@@ -5,7 +5,7 @@
 <div class="pa-breadcrumb">
     <div class="container-fluid">
         <div class="pa-breadcrumb-box">
-            <h1>Shipping policy</h1>
+            <h1>SHIPPING POLICY</h1>
             <ul>
                 <li><a href="./">Home</a></li>
                 <li>Shipping policy</li>
@@ -20,41 +20,39 @@
             <div class="col-lg-8 offset-lg-2">
 
                 <div class="policy-section">
-                    <h3>General Return Policy</h3>
-                    <p>We want you to love the products that you buy from us. If you are not satisfied with your
-                        purchase, please contact us within 2 days of delivery.</p>
-                    <p>To initiate a return or replacement, drop us an email at <a
+                    <p>We want you to love the products that you buy from us. In case you are not satisfied with your
+                        purchase, drop us a mail within 2 days of delivery with details at <a
                             href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> with
-                        “Returns and
-                        Replacement” as the subject. Our team will get back to you promptly.</p>
+                        “Returns and Replacement” as a subject and we will get back to you</p>
                 </div>
 
                 <div class="policy-section">
-                    <h3>Wrong Item Received</h3>
-                    <p>If you received the wrong item, please contact us within 2 days of delivery by emailing us at <a
-                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or calling
-                        us at <a href="tel:+919718832501">971883-2501</a>. Our Customer Delight team will resolve the
-                        issue
-                        as soon as possible.</p>
+                    <h3>In case you received the wrong item</h3>
+                    <p>Drop us an email at <a
+                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or call us
+                        at <a href="tel:+91971883-2501"> 971883-2501</a> within 2 days of the date of
+                        delivery. Our Customer delight team will resolve it at the earliest.</p>
                 </div>
 
                 <div class="policy-section">
-                    <h3>Damaged Item Received</h3>
-                    <p>If your item arrives damaged, please notify us within 2 days of delivery. Send an email with your
-                        order ID and a picture of the damaged product to <a
-                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or call <a
-                            href="tel:+919718832501">971883-2501</a>. Our customer delight team will assist you with
-                        your query and resolve it promptly.</p>
+                    <h3>In case you received a damaged item</h3>
+                    Drop us an email with your order id and the picture of the damaged product at
+                    <a href="mailto:support@naturalayurvedatips.com"> or call at <a href="tel:+91971883-2501">
+                            971883-2501</a> within 2 days of the date of delivery. Our customer
+                        delight team will help you with your queries and resolve them at the earliest.
                 </div>
 
                 <div class="policy-section">
-                    <h3>Shipping Charges</h3>
-                    <p>We offer FREE Shipping on all orders unless otherwise specified. Shipping rates shown at checkout
-                        are final.</p>
+                    <h3>Shipping charges on purchase</h3>
+                    <p>We offer FREE Shipping on all orders, which is notified from time to time. We also offer Free
+                        Cash-On-Delivery. You should consider the shipping rates shown at the time of check-out to be
+                        final.
+                        <b>Note:- Order will be shipped within 24-48hrs of placing the orders.</b>
+                    </p>
                 </div>
 
                 <div class="policy-section">
-                    <h3>Conditions for Returns or Refunds</h3>
+                    <h3>Conditions where a product can be returned or refunded</h3>
                     <ul>
                         <li>Wrong product delivered</li>
                         <li>Expired product delivered</li>
@@ -64,18 +62,18 @@
                 </div>
 
                 <div class="policy-section">
-                    <h3>Conditions Not Eligible for Refund/Return</h3>
+                    <h3>Conditions where refund/return requests will not be processed</h3>
                     <ul>
-                        <li>Opened/ used/ altered products</li>
-                        <li>Missing original packaging (mono cartons, labels, etc.)</li>
-                        <li>Return request made after 7 days from delivery</li>
-                        <li>Damaged or missing product reported after 2 days from delivery</li>
+                        <li>Opened/ used/ altered products.</li>
+                        <li>Original packaging (mono cartons, labels, etc.) missing.</li>
+                        <li>return/ replacement request is generated after 7 days from the date of delivery.</li>
+                        <li>The damaged/ missing product is reported after 2 days from the date of delivery.</li>
                         <li>Orders placed during promotional offer periods</li>
                     </ul>
                 </div>
 
-                <p><strong>Note:</strong> In unforeseen circumstances, the brand reserves the right to void shipments
-                    and process refunds for applicable orders.</p>
+                <p><strong>Note:</strong> In case of unforeseen circumstances, the brand reserves full rights to void
+                    the shipment and process a refund in case of the applicable order.</p>
             </div>
         </div>
     </div>

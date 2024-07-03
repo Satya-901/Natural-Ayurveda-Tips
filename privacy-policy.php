@@ -73,7 +73,8 @@
 
         <h3>Questions and contact information</h3>
         <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a
-            complaint, or simply want more information, contact our customer support at support@naturalayurvedatips.com</p>
+            complaint, or simply want more information, contact our customer support at support@naturalayurvedatips.com
+        </p>
     </div>
 </div>
 
