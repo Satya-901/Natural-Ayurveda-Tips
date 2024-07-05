@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <?php include ('admin/db_connect.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" id="theme-change" type="text/css" href="#">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <script src="admin/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="admin/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <style>
         .float {

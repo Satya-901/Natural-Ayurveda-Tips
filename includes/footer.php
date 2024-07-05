@@ -4,22 +4,25 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="pa-foot-box">
-                    <h2 class="pa-foot-title">Top Products</h2>
+                    <h2 class="pa-foot-title">Important Links</h2>
                     <ul>
                         <li>
-                            <a href="javascript:;">Black Organic Tea</a>
+                            <a href="./">Home</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Loose Leaf Tea</a>
+                            <a href="about-us.php">About</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Oolong Tea</a>
+                            <a href="diseases.php">Diseases</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Green Tea</a>
+                            <a href="products.php">Products</a>
                         </li>
                         <li>
-                            <a href="javascript:;">Sencha Tea</a>
+                            <a href="blog.php">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.php">Consult A Doctor</a>
                         </li>
                     </ul>
                 </div>
@@ -46,24 +49,39 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-3 col-md-6">
+                <div class="pa-foot-box">
+                    <h2 class="pa-foot-title">Contact Information</h2>
+                    <ul style="color: #ffffff;">
+                        <li>
+                            <b>Phone:</b> 971883 2501
+                        </li>
+                        <li>
+                            <b>Email:</b> support@naturalayurvedatips.com
+                        </li>
+                        <li>
+                            <b>Address:</b> G.B Nagar Uttar Pradesh 201301
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
                 <div class="pa-foot-box pa-foot-subscribe">
                     <img style="height: 100px;" src="assets/img/logo.png" alt="image" class="img-fluid" />
-                    <!-- <div class="pa-newsletter">
+                    <div class="pa-newsletter">
                         <form>
                             <input type="text" placeholder="Subscribe newsletter">
                             <button class="pa-btn">Subscribe now</button>
                         </form>
-                    </div> -->
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- footer end -->
+
+
 <!-- copyright start -->
 <div class="pa-copyright">
     <div class="container">
@@ -71,34 +89,33 @@
     </div>
 </div>
 <!-- copyright end -->
+
+
 <!-- login start -->
 <div class="pa-login-model">
     <div class="modal fade" id="loginModel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <button type="button" class="pa-login-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="pa-login-close close" data-bs-dismiss="modal" aria-label="Close"> <span
+                        aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
                     <h1 class="pa-login-title">Login</h1>
-                    <form>
+                    <form id="login-frm">
                         <div class="pa-login-form">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                            <input type="email" name="email" required="" placeholder="email">
+                            <input type="password" name="password" required="" placeholder="Password">
                             <div class="pa-remember">
                                 <label>Remember Me
                                     <input type="checkbox">
                                     <span class="s_checkbox"></span>
                                 </label>
-                                <a href="javascript:;" class="pa-forgot-password" data-toggle="modal"
-                                    data-target="#forgotModal" data-dismiss="modal" aria-label="Close">Forgot
-                                    Password ?</a>
+                                <a href="javascript:;" class="pa-forgot-password" data-bs-toggle="modal"
+                                    data-bs-target="#forgotModal">Forgot Password ?</a>
                             </div>
                             <div class="pa-login-btn">
                                 <button class="pa-btn">Login</button>
-                                <p>Don't have an account? <a href="javascript:;" data-toggle="modal"
-                                        data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign
-                                        up</a></p>
+                                <p>Don't have an account? <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#signupModal">Sign up</a></p>
                             </div>
                         </div>
                     </form>
@@ -107,29 +124,78 @@
         </div>
     </div>
 </div>
+<script>
+    $('#new_account').click(function () {
+        uni_modal("Create an Account", 'signup.php?redirect=index.php?page=checkout')
+    })
+    $('#login-frm').submit(function (e) {
+        e.preventDefault()
+        $('#login-frm button[type="submit"]').attr('disabled', true).html('Logging in...');
+        if ($(this).find('.alert-danger').length > 0)
+            $(this).find('.alert-danger').remove();
+        $.ajax({
+            url: 'admin/ajax.php?action=login2',
+            method: 'POST',
+            data: $(this).serialize(),
+            error: err => {
+                console.log(err)
+                $('#login-frm button[type="submit"]').removeAttr('disabled').html('Login');
+
+            },
+            success: function (resp) {
+                if (resp == 1) {
+                    location.href = '<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : 'index.php?page=home' ?>';
+                } else {
+                    $('#login-frm').prepend('<div class="alert alert-danger">Email or password is incorrect.</div>')
+                    $('#login-frm button[type="submit"]').removeAttr('disabled').html('Login');
+                }
+            }
+        })
+    })
+</script>
 <!-- login end -->
+
+
 <!-- signup start -->
 <div class="pa-login-model pa-signup-modal">
-    <div class="modal fade" id="signUpModal">
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <button type="button" class="pa-login-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="pa-login-close close" data-bs-dismiss="modal" aria-label="Close"> <span
+                        aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
                     <h1 class="pa-login-title">Signup</h1>
-                    <form>
-                        <div class="pa-login-form">
-                            <input type="text" placeholder="Username">
-                            <input type="text" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <input type="password" placeholder="Confirm Password">
-
-                            <div class="pa-login-btn">
-                                <button class="pa-btn">Sign up</button>
-                                <p>Already have an account? <a href="javascript:;" data-toggle="modal"
-                                        data-target="#loginModel" data-dismiss="modal" aria-label="Close">Login</a></p>
-                            </div>
+                    <form action="" id="signup-frm">
+                        <div class="form-group">
+                            <label for="" class="control-label">Firstname</label>
+                            <input type="text" name="first_name" required="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label">Lastname</label>
+                            <input type="text" name="last_name" required="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label">Contact</label>
+                            <input type="text" name="mobile" required="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label">Address</label>
+                            <textarea cols="30" rows="3" name="address" required="" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label">Email</label>
+                            <input type="email" name="email" required="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label">Password</label>
+                            <input type="password" name="password" required="" class="form-control">
+                        </div>
+                        <!-- <button class="button btn btn-info btn-sm">Create</button> -->
+                        <div class="pa-login-btn mt-4">
+                            <button class="pa-btn">Sign up</button>
+                            <p>Already have an account?
+                                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#loginModel">Login</a>
+                            </p>
                         </div>
                     </form>
                 </div>
@@ -137,15 +203,43 @@
         </div>
     </div>
 </div>
+<script>
+    $('#signup-frm').submit(function (e) {
+        e.preventDefault()
+        $('#signup-frm button[type="submit"]').attr('disabled', true).html('Saving...');
+        if ($(this).find('.alert-danger').length > 0)
+            $(this).find('.alert-danger').remove();
+        $.ajax({
+            url: 'admin/ajax.php?action=signup',
+            method: 'POST',
+            data: $(this).serialize(),
+            error: err => {
+                console.log(err)
+                $('#signup-frm button[type="submit"]').removeAttr('disabled').html('Create');
+
+            },
+            success: function (resp) {
+                if (resp == 1) {
+                    location.href = '<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : 'cart.php' ?>';
+                } else {
+                    $('#signup-frm').prepend('<div class="alert alert-danger">Email already exist.</div>')
+                    $('#signup-frm button[type="submit"]').removeAttr('disabled').html('Create');
+                }
+            }
+        })
+    })
+</script>
+
 <!-- signup end -->
+
+
 <!-- forgot start -->
 <div class="pa-login-model pa-forgot-modal">
     <div class="modal fade" id="forgotModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <button type="button" class="pa-login-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="pa-login-close close" data-bs-dismiss="modal" aria-label="Close"> <span
+                        aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
                     <h1 class="pa-login-title">Forgot Password</h1>
                     <form>
@@ -153,9 +247,6 @@
                             <input type="text" placeholder="Email">
                             <div class="pa-login-btn">
                                 <button class="pa-btn">Forgot</button>
-                                <p>Don't have an account? <a href="javascript:;" data-toggle="modal"
-                                        data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign
-                                        up</a></p>
                             </div>
                         </div>
                     </form>
@@ -165,9 +256,11 @@
     </div>
 </div>
 <!-- forgot end -->
+
+
 </div>
-<!-- main wrapper end -->
-<!-- GO To Top -->
+
+
 <a href="https://api.whatsapp.com/send?phone=9718832501" class="float" target="_blank">
     <svg class="my-float " xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -176,11 +269,102 @@
     </svg>
 </a>
 
+
+
+<script>
+    $('.datepicker').datepicker({
+        format: "yyyy-mm-dd"
+    })
+    window.start_load = function () {
+        $('body').prepend('<di id="preloader2"></di>')
+    }
+    window.end_load = function () {
+        $('#preloader2').fadeOut('fast', function () {
+            $(this).remove();
+        })
+    }
+
+    window.uni_modal = function ($title = '', $url = '') {
+        start_load()
+        $.ajax({
+            url: $url,
+            error: err => {
+                console.log()
+                alert("An error occured")
+            },
+            success: function (resp) {
+                if (resp) {
+                    $('#uni_modal .modal-title').html($title)
+                    $('#uni_modal .modal-body').html(resp)
+                    $('#uni_modal').modal('show')
+                    end_load()
+                }
+            }
+        })
+    }
+    window.uni_modal_right = function ($title = '', $url = '') {
+        start_load()
+        $.ajax({
+            url: $url,
+            error: err => {
+                console.log()
+                alert("An error occured")
+            },
+            success: function (resp) {
+                if (resp) {
+                    $('#uni_modal_right .modal-title').html($title)
+                    $('#uni_modal_right .modal-body').html(resp)
+                    $('#uni_modal_right').modal('show')
+                    end_load()
+                }
+            }
+        })
+    }
+    window.alert_toast = function ($msg = 'TEST', $bg = 'success') {
+        $('#alert_toast').removeClass('bg-success')
+        $('#alert_toast').removeClass('bg-danger')
+        $('#alert_toast').removeClass('bg-info')
+        $('#alert_toast').removeClass('bg-warning')
+
+        if ($bg == 'success')
+            $('#alert_toast').addClass('bg-success')
+        if ($bg == 'danger')
+            $('#alert_toast').addClass('bg-danger')
+        if ($bg == 'info')
+            $('#alert_toast').addClass('bg-info')
+        if ($bg == 'warning')
+            $('#alert_toast').addClass('bg-warning')
+        $('#alert_toast .toast-body').html($msg)
+        $('#alert_toast').toast({ delay: 3000 }).toast('show');
+    }
+    window.load_cart = function () {
+        $.ajax({
+            url: 'admin/ajax.php?action=get_cart_count',
+            success: function (resp) {
+                if (resp > -1) {
+                    resp = resp > 0 ? resp : 0;
+                    $('.item_count').html(resp)
+                }
+            }
+        })
+    }
+    $('#login_now').click(function () {
+        uni_modal("LOGIN", 'login.php')
+    })
+    $(document).ready(function () {
+        load_cart()
+    })
+</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/SmoothScroll.min.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+
+<script src='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'></script>
+<script src="assets\js\alertjs.js"></script>
+
 </body>
 
 </html>

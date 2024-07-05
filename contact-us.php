@@ -2,7 +2,8 @@
 <?php include_once ('includes/header.php'); ?>
 
 <!-- breadcrumb start -->
-<div class="pa-breadcrumb">
+<div class="pa-breadcrumb"
+    style="background: linear-gradient(45deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(assets/img/contact-us-banner.png);">
     <div class="container-fluid">
         <div class="pa-breadcrumb-box">
             <h1>Consultation Form</h1>
@@ -20,7 +21,7 @@
             <div class="col-md-6 mb-4">
                 <div class="pa-contact-form">
                     <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="access_key" value="ee043311-4fab-47cd-b3d4-5011e3bdfc6b">
                         <div class="">
                             <input type="text" class="" name="name" placeholder="Name *" required>
                         </div>

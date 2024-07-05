@@ -10,6 +10,8 @@
 					class="fa-solid fa-ticket"></i></span> Products</a>
 		<a href="index.php?page=categories" class="nav-item nav-categories"><span class='icon-field'><i
 					class="fa fa-list"></i></span> Category List</a>
+		<a href="index.php?page=blogs" class="nav-item nav-blogs"><span class='icon-field'><i
+					class="fa fa-list"></i></span> Blog List</a>
 
 		<?php if ($_SESSION['login_type'] == 1): ?>
 			<a href="index.php?page=users" class="nav-item nav-users"><span class='icon-field'><i

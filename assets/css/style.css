@@ -30,6 +30,13 @@
     height: auto;
 }
 
+.pa-logo {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     color: #242424;
@@ -1709,7 +1716,7 @@ p.pa-product-rating {
 .pa-cart-box table td {
     padding: 20px;
     text-transform: capitalize;
-    border: 1px solid #eee;
+    border: 1px solid var(--pureayurveda-primary);
 }
 
 .pa-cart-box table th,
@@ -1825,7 +1832,7 @@ td.pa-cart-total-price p {
 }
 
 .pa-garnd-total p {
-    border: 1px solid #eee;
+    border: 1px solid var(--pureayurveda-primary);
     border-top: 0;
 }
 

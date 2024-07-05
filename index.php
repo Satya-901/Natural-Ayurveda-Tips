@@ -7,7 +7,10 @@
             <img src="assets/img/banner-1.png" class="d-block w-100" alt="Slide 1">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/slider-2.png" class="d-block w-100" alt="Slide 2">
+            <img src="assets/img/banner-2.png" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/banner-3.png" class="d-block w-100" alt="Slide 2">
         </div>
     </div>
     <!-- Previous and Next buttons -->
@@ -24,71 +27,60 @@
 
 <div class="pa-medicine pt-3 pb-3">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
+                    <img style="height: 100px;" src="assets/img/kidney-stone.png" alt="" class="img-fluid" />
+                    <p><a href="#">Kidney Stone</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
+                    <img style="height: 100px;" src="assets/img/stomach.png" alt="" class="img-fluid" />
+                    <p><a href="#">Stomach treatment</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
+                    <img style="height: 100px;" src="assets/img/piles.png" alt="" class="img-fluid" />
+                    <p><a href="#">Piles treatment</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3">
-                <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3">
-                <div class="pa-medicine-box">
-                    <img src="assets/images/top1.jpg" alt="image" class="img-fluid" />
-                    <p><a href="#">Herbal medicine</a></p>
+                    <img style="height: 100px;" src="assets/img/likoria.png" alt="" class="img-fluid" />
+                    <p><a href="#">Likoria treatment</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid mb-3 ">
+<div class="container-fluid mb-3">
     <div class="row">
-        <div class="col-md-4">
-            <img src="assets/img/main-card.png" alt="" style="width: 500px;">
+        <di style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
+            <img src="assets/img/card-banner1.jpg" alt="" style="width: 480px;">
+        </di>
+        <div style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
+            <img src="assets/img/card-banner2.jpg" alt="" style="width: 480px;">
         </div>
-        <div class="col-md-4">
-            <img src="assets/img/main-card.png" alt="" style="width: 500px;">
-        </div>
-        <div class="col-md-4">
-            <img src="assets/img/main-card.png" alt="" style="width: 500px;">
+        <div style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
+            <img src="assets/img/card-banner3.jpg" alt="" style="width: 480px;">
         </div>
     </div>
 </div>
 
 <div class="bg-banner1">
     <div class="container bg-banner1-text">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, perferendis dolore iure quis quam veniam
-            ducimus. Et quos commodi porro amet aut illum doloremque maiores, nihil vel, provident incidunt mollitia
-            hic. Maiores et in aliquid molestiae porro officiis rem odio.</p>
+        <h3>Ayurveda</h3>
+        <p>Ayurveda is an ancient system of medicine that originated in India more than 3,000 years ago. The word
+            "Ayurveda" is derived from the Sanskrit words "Ayur" (life) and "Veda" (science or knowledge), translating
+            to "the science of life." It emphasizes a holistic approach to health and wellness, integrating the mind,
+            body, and spirit.</p>
     </div>
 </div>
 
-<div class="pa-trending-product">
+<div class="pa-trending-product" id="diseases">
     <div class="container">
         <div class="pa-heading">
             <img src="assets/images/herbal.svg" alt="image" class="img-fluid">
@@ -157,7 +149,7 @@
         <div class="pa-heading">
             <h1 class="text-light">top products</h1>
         </div>
-        <div class="row" style="justify-content: center;">
+        <div class="row justify-content-center">
             <?php
             $limit = 10;
             $page = (isset($_GET['_page']) && $_GET['_page'] > 0) ? $_GET['_page'] - 1 : 0;
@@ -174,43 +166,12 @@
                                 alt="assets/img/<?php echo $row['img_path'] ?>" class="img-fluid" />
                         </div>
                         <div class="pa-product-content">
-                            <h4><a href="product-detail.php"><?php echo $row['name'] ?></a></h4>
-                            <p>&#8377; <?php echo $row['price'] ?></p>
-                        </div>
-                        <div class="pa-product-cart">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <g>
-                                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                                    c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                                    c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                                    s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                                    C512,93.417,453.532,30,376,30z" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
-                                            <g>
-                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
-                                                    S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
-                                                    c0.512-23.04,18.944-41.472,41.472-41.472V208.64z" />
-                                            </g>
-                                            <g>
-                                                <path
-                                                    d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
-                                                    c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
-                                                    C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
-                                                    s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
+                            </h4>
+                            <p>&#8377; <?php echo $row['price'] ?></p><br>
+                            <!-- <a class="btn btn-dark btn-sm" href="product-detail.php?id=<?php //echo $row['id']; ?>">Shop Now</a>
+                            <button class="btn btn-outline-dark btn-sm btn-block" id="add_to_cart_modal"><i
+                                    class="fa fa-cart-plus"></i> Add to Cart</button> -->
                         </div>
                     </div>
                 </div>
@@ -354,11 +315,11 @@
 </div>
 
 <div class="pa-tesimonial spacer-top spacer-bottom">
-    <div class="container">
+    <div id="testimonials" class="container">
         <div class="pa-heading">
             <img src="assets/img/herbal.svg" alt="image" class="img-fluid" />
             <h1>Hear from Our Patients</h1>
-            <h5>Discover How Natural Ayurveda Tips Transformed Lives.</h5>
+            <h5 style="color: #cea21c;">Discover How Natural Ayurveda Tips Transformed Lives.</h5>
         </div>
         <div class="row">
             <div class="swiper-container">
@@ -447,75 +408,25 @@
             <h5>blog</h5>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="pa-blog-box">
-                    <img src="assets/images/blog1.jpg" alt="image" class="img-fluid">
-                    <div class="pa-blog-title">
-                        <a href="#" class="pa-blog-category">Ayurveda Medicine</a>
-                        <h2><a href="blog-single.html">Duis aute irure dolor in velit voluptate esse</a></h2>
-                        <a href="#" class="pa-blog-date">20 March, 2020</a>
+            <?php
+            $sql = "SELECT * FROM blog";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    ?>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pa-blog-box">
+                            <img style="height: 273px;" src="assets/img/<?= $row["image"] ?>" alt="" class="img-fluid">
+                            <div class="pa-blog-title">
+                                <h2><a href="blog-detail.php?id=<?= $row["id"]; ?>"><?= $row["title"] ?></a></h2>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pa-blog-view">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="far fa-heart"></i> 900</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-eye"></i> 830</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-share-alt"></i> Share</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="pa-blog-box">
-                    <img src="assets/images/blog2.jpg" alt="image" class="img-fluid">
-                    <div class="pa-blog-title">
-                        <a href="#" class="pa-blog-category">Ayurveda Medicine</a>
-                        <h2><a href="blog-single.html">Duis aute irure dolor in velit voluptate esse</a></h2>
-                        <a href="#" class="pa-blog-date">20 March, 2020</a>
-                    </div>
-                    <div class="pa-blog-view">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="far fa-heart"></i> 900</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-eye"></i> 830</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-share-alt"></i> Share</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="pa-blog-box">
-                    <img src="assets/images/blog3.jpg" alt="image" class="img-fluid">
-                    <div class="pa-blog-title">
-                        <a href="#" class="pa-blog-category">Ayurveda Medicine</a>
-                        <h2><a href="blog-single.html">Duis aute irure dolor in velit voluptate esse</a></h2>
-                        <a href="#" class="pa-blog-date">20 March, 2020</a>
-                    </div>
-                    <div class="pa-blog-view">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="far fa-heart"></i> 900</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-eye"></i> 830</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-share-alt"></i> Share</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                    <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </div>

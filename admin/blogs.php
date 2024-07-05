@@ -10,14 +10,14 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="mb-3">Product List <span style="float: right;"><a class="btn btn-primary btn-sm"
-                                    href="index.php?page=addProducts">Add Products</a></span> </h5>
+                                    href="index.php?page=add-blog">Add Blog</a></span> </h5>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th class="text-center">#</th>
                                         <th class="text-center">Img</th>
-                                        <th class="text-center">Details</th>
+                                        <th class="text-center">Title</th>
                                         <th class="text-center">Description</th>
                                         <th class="text-center">Action</th>
                                     </tr>
@@ -25,26 +25,23 @@
                                 <tbody>
                                     <?php
                                     $i = 1;
-                                    $cats = $conn->query("SELECT p.*, c.name as cat FROM product_list p inner join category_list c on c.id = p.category_id order by p.id asc");
+                                    $cats = $conn->query("SELECT * FROM `blog`");
                                     while ($row = $cats->fetch_assoc()):
                                         ?>
                                         <tr>
                                             <td class="text-center"><?php echo $i++ ?></td>
                                             <td class="text-center">
-                                                <img src="<?php echo isset($row['img_path']) ? '../assets/img/' . $row['img_path'] : '' ?>"
+                                                <img src="<?php echo isset($row['image']) ? '../assets/img/' . $row['image'] : '' ?>"
                                                     alt="" id="cimg">
                                             </td>
                                             <td class="">
-                                                <p>Name : <b><?php echo $row['name'] ?></b></p>
-                                                <p>Category : <b><?php echo $row['cat'] ?></b></p>
-                                                <p>Price : <b><?php echo "$" . number_format($row['price'], 2) ?></b></p>
+                                                <?php echo $row['title'] ?>
                                             </td>
                                             <td>
-                                                <b class="truncate"><?php echo $row['description'] ?></b>
+                                                <b class="truncate"><?php echo $row['text'] ?></b>
                                             </td>
                                             <td class="text-center">
-                                                <a class="btn btn-sm btn-primary"
-                                                    href="index.php?page=update-product&id=<?= $row['id']; ?>">Edit </a>
+                                                <button class="btn btn-sm btn-primary edit_menu" type="button">Edit</button>
                                                 <button class="btn btn-sm btn-danger delete_menu" type="button"
                                                     data-id="<?php echo $row['id'] ?>">Delete</button>
                                             </td>
