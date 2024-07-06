@@ -20,13 +20,12 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="pa-about-img">
-                    <img src="assets/images/about.jpg" alt="image" class="img-fluid" />
+                    <img src="assets/img/about.jpg" alt="image" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="pa-about-content">
                     <div class="pa-heading">
-                        <img src="assets/img/herbal.svg" alt="image" class="img-fluid">
                         <h1>We are here with 25 years of experience</h1>
                         <h5>about us</h5>
                     </div>

@@ -169,9 +169,9 @@
                             <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </h4>
                             <p>&#8377; <?php echo $row['price'] ?></p><br>
-                            <!-- <a class="btn btn-dark btn-sm" href="product-detail.php?id=<?php //echo $row['id']; ?>">Shop Now</a>
-                            <button class="btn btn-outline-dark btn-sm btn-block" id="add_to_cart_modal"><i
-                                    class="fa fa-cart-plus"></i> Add to Cart</button> -->
+
+                            <a style="    color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
+                                href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -430,5 +430,7 @@
         </div>
     </div>
 </div>
+
+
 
 <?php include_once ('includes/footer.php'); ?>

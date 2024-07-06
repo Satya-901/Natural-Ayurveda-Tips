@@ -24,10 +24,10 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
         </div>
         <div class="col-md-6">
             <h2><?php echo $qry['name'] ?></h2>
-            <p class="text-muted">Category: <?php echo $qry['category_id'] ?></p>
+            <!-- <p class="text-muted">Category: <?php //echo $qry['category_id'] ?></p> -->
             <p class="lead">₹ <?= $qry['price']; ?>/-</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis rutrum magna eget bibendum.
-                Nulla varius interdum metus ut lobortis.</p>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis rutrum magna eget bibendum.
+                Nulla varius interdum metus ut lobortis.</p> -->
             <hr>
             <div class="form-group">
                 <label for="quantity">Quantity</label>
