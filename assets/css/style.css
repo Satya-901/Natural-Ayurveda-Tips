@@ -1281,6 +1281,8 @@ p.pa-product-rating {
 
 .pa-product-widget .pa-pro-wid-img {
     width: 70px;
+    border: 1px solid var(--pureayurveda-primary);
+    border-radius: 4px;
 }
 
 .pa-product-widget .pa-pro-wid-content {
@@ -1298,9 +1300,7 @@ p.pa-product-rating {
 }
 
 .pa-pro-wid-img img {
-    border: 1px solid var(--pureayurveda-primary);
     padding: 5px;
-    border-radius: 4px;
     height: 100px;
 }
 

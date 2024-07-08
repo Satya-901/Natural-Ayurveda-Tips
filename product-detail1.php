@@ -33,7 +33,7 @@
     .product-description ol li:before {
         content: "➤";
         /* Custom bullet for ol items */
-        color: #007BFF;
+        color: #684427;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -43,7 +43,7 @@
     .product-description ul li:before {
         content: "➤";
         /* Custom bullet for ul items */
-        color: #007BFF;
+        color: #684427;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -52,7 +52,7 @@
 
     .product-description ol li strong,
     .product-description ul li strong {
-        color: #007BFF;
+        color: #684427;
         /* Different color for the key ingredient titles and benefit titles */
     }
 
@@ -110,8 +110,42 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="pa-prod-thumb-img">
-                            <img src="assets/img/<?= $qry['img_path'] ?>" alt="assets/img/<?= $qry['img_path'] ?>"
-                                class="img-fluid">
+                            <?php
+                            if ($qry['productimage2'] == "") {
+                                ?>
+                                <img style="height: 260px;" src="assets/img/<?= $qry['img_path'] ?>"
+                                    alt="assets/img/<?= $qry['img_path'] ?>" class="img-fluid">
+                                <?php
+                            } else {
+                                ?>
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/<?= $qry['img_path'] ?>" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/<?= $qry['productimage2'] ?>" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/<?= $qry['productimage3'] ?>" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -211,7 +245,8 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
 
                                 <li>
                                     <div class="pa-pro-wid-img">
-                                        <img src="assets/img/<?php echo $row['img_path'] ?>" alt="image" class="img-fluid">
+                                        <center><img src="assets/img/<?php echo $row['img_path'] ?>" alt="image"
+                                                class="img-fluid"></center>
                                     </div>
                                     <div class="pa-pro-wid-content">
                                         <h4><a

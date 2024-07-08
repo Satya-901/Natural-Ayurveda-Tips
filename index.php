@@ -49,7 +49,7 @@
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
                     <img style="height: 100px;" src="assets/img/likoria.png" alt="" class="img-fluid" />
-                    <p><a href="#">Likoria treatment</a></p>
+                    <p><a href="#">Leukorrhea treatment</a></p>
                 </div>
             </div>
         </div>
@@ -72,11 +72,11 @@
     </div>
 </div>
 
-<div class="pa-trending-product" id="diseases">
+<div class="pa-trending-product mt-4" id="diseases">
     <div class="container">
         <div class="pa-heading">
             <img src="assets/images/herbal.svg" alt="image" class="img-fluid">
-            <h1>ayurvedic treatment</h1>
+            <h1>Ayurvedic treatment</h1>
         </div>
         <div class="row">
             <div class="swiper-container swiper-container-horizontal">
@@ -89,7 +89,7 @@
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="product-single.html">piles treatment</a></h4>
+                                <h4><a href="">Piles treatment</a></h4>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="product-single.html">stone treatment</a></h4>
+                                <h4><a href="">Stone treatment</a></h4>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="product-single.html">acidity treatment</a></h4>
+                                <h4><a href="">Acidity treatment</a></h4>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="product-single.html">leukocoria treatment</a></h4>
+                                <h4><a href="">Leukocoria treatment</a></h4>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         <div class="pa-product-content">
                             <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </h4>
-                            <p>&#8377; <?php echo $row['price'] ?></p><br>
+                            <p style="font-family: sans-serif;">₹ <?php echo $row['price'] ?></p><br>
 
                             <a style="    color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
                                 href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
@@ -308,7 +308,7 @@
 
 <div class="pa-tesimonial spacer-top spacer-bottom">
     <div id="testimonials" class="container">
-        <div class="pa-heading">
+        <div class="pa-heading" style="margin-top: 80px;">
             <img src="assets/img/herbal.svg" alt="image" class="img-fluid" />
             <h1>Hear from Our Patients</h1>
             <h5 style="color: #cea21c;">Discover How Natural Ayurveda Tips Transformed Lives.</h5>

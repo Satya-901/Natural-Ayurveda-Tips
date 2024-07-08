@@ -47,9 +47,7 @@
     <!-- pre loader start -->
     <div class="pa-preloader">
         <div class="pa-ellipsis">
-            <span></span>
-            <span></span>
-            <span></span>
+            <center><img style="height: 150px;" src="assets/img/logo.png" alt="logo"></center>
         </div>
     </div>
     <!-- pre loader end -->

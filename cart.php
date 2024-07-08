@@ -69,7 +69,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>₹ <?php echo number_format($row['qty'] * $row['price'], 2) ?></td>
+                                    <td style="font-family: sans-serif;">₹ <?php echo number_format($row['qty'] * $row['price'], 2) ?></td>
                                     <td><a href="admin/ajax.php?action=delete_cart&id=<?php echo $row['cid'] ?>"
                                             class="rem_cart btn btn-sm btn-outline-danger"
                                             data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a></td>
@@ -81,7 +81,7 @@
                     <div class="pa-garnd-total">
                         <p>
                             <span>Grant total:</span>
-                            <span>₹ <?php echo number_format($total, 2) ?></span>
+                            <span style="font-family: sans-serif;">₹ <?php echo number_format($total, 2) ?></span>
                         </p>
                         <?php
                         if (isset($_SESSION['login_user_id']) == 1) {

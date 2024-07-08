@@ -4,7 +4,7 @@
         margin-top: 0;
     }
 </style>
-<div class="pa-top-header">
+<!-- <div class="pa-top-header">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="pa-main-header">
     <div class="container-fluid">
         <div class="row">
@@ -47,7 +47,7 @@
                             <li><a href="./">Home</a></li>
                             <li><a href="about-us.php">About us</a></li>
                             <li><a href="./#diseases">Diseases</a></li>
-                            <li><a href="products.php">Products</a></li>
+                            <li><a href="products.php">Shop</a></li>
                             <li><a href="blog.php">Blog</a></li>
                             <li><a href="./#testimonials">Testimonials</a></li>
                             <li><a href="contact-us.php">Consult a doctor</a></li>

@@ -5,10 +5,10 @@
 <div class="pa-breadcrumb">
     <div class="container-fluid">
         <div class="pa-breadcrumb-box">
-            <h1>Products</h1>
+            <h1>Shop</h1>
             <ul>
                 <li><a href="./">Home</a></li>
-                <li>Products</li>
+                <li>Shop</li>
             </ul>
         </div>
     </div>

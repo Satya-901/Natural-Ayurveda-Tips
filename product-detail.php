@@ -33,7 +33,7 @@
     .product-description ol li:before {
         content: "➤";
         /* Custom bullet for ol items */
-        color: #007BFF;
+        color: #684427;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -43,7 +43,7 @@
     .product-description ul li:before {
         content: "➤";
         /* Custom bullet for ul items */
-        color: #007BFF;
+        color: #684427;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -52,7 +52,7 @@
 
     .product-description ol li strong,
     .product-description ul li strong {
-        color: #007BFF;
+        color: #684427;
         /* Different color for the key ingredient titles and benefit titles */
     }
 
@@ -211,11 +211,10 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
 
                                 <li>
                                     <div class="pa-pro-wid-img">
-                                        <img src="assets/img/<?php echo $row['img_path'] ?>" alt="image" class="img-fluid">
+                                        <center><img src="assets/img/<?php echo $row['img_path'] ?>" alt="image" class="img-fluid"></center>
                                     </div>
                                     <div class="pa-pro-wid-content">
-                                        <h4><a
-                                                href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
+                                        <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                                         </h4>
                                         <p>Ut enim ad minim veniam, quis nostrud exerci</p>
                                     </div>

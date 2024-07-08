@@ -75,17 +75,17 @@ if ($chk <= 0) {
                                     ?>
                                     <tr>
                                         <td> <?php echo $row['name'] ?></td>
-                                        <td>₹ <?php echo number_format($row['price'], 2) ?></td>
+                                        <td style="font-family: sans-serif;">₹ <?php echo number_format($row['price'], 2) ?></td>
                                     </tr>
                                 <?php endwhile; ?>
                                 <tr class="pa-checkout-total">
                                     <td>Grand Total</td>
-                                    <td>₹ <?php echo number_format($total, 2) ?></td>
+                                    <td style="font-family: sans-serif;">₹ <?php echo number_format($total, 2) ?></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="pa-place-order-btn">
-                            <button class="btn btn-block btn-outline-dark">Place Order</button>
+                            <!-- <button class="btn btn-block btn-outline-dark">Place Order</button> -->
                             <button class="pa-btn">place order</button>
                         </div>
                     </div>

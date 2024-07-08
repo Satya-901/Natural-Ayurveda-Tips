@@ -21,7 +21,7 @@
             <div class="col-md-6 mb-4">
                 <div class="pa-contact-form">
                     <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="ee043311-4fab-47cd-b3d4-5011e3bdfc6b">
+                        <input type="hidden" name="access_key" value="287f0ec2-227c-4edf-bed5-27858342e317">
                         <div class="">
                             <input type="text" class="" name="name" placeholder="Name *" required>
                         </div>
@@ -41,15 +41,15 @@
             <div class="col-md-6 mb-4">
                 <div class="newsletter-box mb-3">
                     <h5>Email</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Contact@naturalayurvedatips.com</p>
                 </div>
                 <div class="newsletter-box mb-3">
                     <h5>Phone</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>971883 2501</p>
                 </div>
                 <div class="newsletter-box">
                     <h5>Address</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>G.B Nagar Uttar Pradesh 201301</p>
                 </div>
             </div>
         </div>
