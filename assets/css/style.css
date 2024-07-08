@@ -151,6 +151,47 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+/* yaha se hai  */
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: calc(33.333% - 20px);
+    height: auto;
+    flex: 1 1 calc(33.333% - 20px);
+    transition: transform 0.2s;
+    box-sizing: border-box;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-section img {
+        max-width: calc(50% - 20px);
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-section img {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+
+/* yaha khatam ho raha hai */
 /* top header start */
 .pa-top-header {
     height: 50px;
@@ -1260,6 +1301,7 @@ p.pa-product-rating {
     border: 1px solid var(--pureayurveda-primary);
     padding: 5px;
     border-radius: 4px;
+    height: 100px;
 }
 
 .pa-widget.pa-shop-category {
@@ -1616,7 +1658,7 @@ p.pa-product-rating {
 /* product single start */
 .pa-prod-thumb-img {
     text-align: center;
-    border: 1px solid #eee;
+    border: 1px solid var(--pureayurveda-primary);
     padding: 30px;
     border-radius: 10px;
 }

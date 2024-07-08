@@ -56,19 +56,11 @@
     </div>
 </div>
 
-<div class="container-fluid mb-3">
-    <div class="row">
-        <di style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
-            <img src="assets/img/card-banner1.jpg" alt="" style="width: 480px;">
-        </di>
-        <div style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
-            <img src="assets/img/card-banner2.jpg" alt="" style="width: 480px;">
-        </div>
-        <div style="background: white; padding: 8px; border-right: 1px solid #eee;" class="col-md-4">
-            <img src="assets/img/card-banner3.jpg" alt="" style="width: 480px;">
-        </div>
-    </div>
-</div>
+<section class="image-section mb-3">
+    <img src="assets/img/card-banner1.jpg" alt="Placeholder Image 1">
+    <img src="assets/img/card-banner2.jpg" alt="Placeholder Image 2">
+    <img src="assets/img/card-banner3.jpg" alt="Placeholder Image 3">
+</section>
 
 <div class="bg-banner1">
     <div class="container bg-banner1-text">

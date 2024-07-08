@@ -13,7 +13,7 @@
                             <a href="about-us.php">About</a>
                         </li>
                         <li>
-                            <a href="diseases.php">Diseases</a>
+                            <a href="./#diseases">Diseases</a>
                         </li>
                         <li>
                             <a href="products.php">Products</a>
