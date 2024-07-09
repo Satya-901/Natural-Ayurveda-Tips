@@ -86,7 +86,8 @@
 </style>
 <?php include_once ('includes/header.php'); ?>
 <?php
-$qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fetch_array();
+$id = $_GET['id'];
+$qry = $conn->query("SELECT * FROM  product_list where id = $id")->fetch_array();
 ?>
 <!-- breadcrumb start -->
 <div class="pa-breadcrumb">
@@ -117,7 +118,9 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                     <div class="col-sm-7">
                         <div class="pa-prod-content">
                             <h2 class="pa-prod-title"><?php echo $qry['name'] ?></h2>
-                            <p class="pa-prod-price"><span>Price: </span> ₹ <?= $qry['price']; ?>/-</span></p>
+                            <p style="font-family: sans-serif;" class="pa-prod-price"><span>Price: </span> ₹
+                                <?= $qry['price']; ?>/-</span>
+                            </p>
                             <a href="#" class="pa-prod-category"><span>Category:</span> Ayurvedic medicine</a>
                             <p class="pa-rating">
                                 <i class="fas fa-star"></i>
@@ -138,7 +141,7 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                                                 d="M 254.667969 216.394531 L 195.402344 275.660156 L 179.316406 259.574219 C 173.449219 253.707031 163.9375 253.707031 158.070312 259.574219 C 152.207031 265.441406 152.207031 274.953125 158.070312 280.816406 L 184.78125 307.527344 C 187.714844 310.460938 191.558594 311.925781 195.402344 311.925781 C 199.246094 311.925781 203.089844 310.460938 206.023438 307.527344 L 275.914062 237.636719 C 281.777344 231.769531 281.777344 222.257812 275.914062 216.394531 C 270.046875 210.523438 260.535156 210.523438 254.667969 216.394531 Z M 254.667969 216.394531 ">
                                             </path>
                                         </svg>
-                                    </span> 100% Pure ayurveda</li>
+                                    </span> 100% Natural</li>
                                 <li><span>
                                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -164,7 +167,7 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                                                 d="m212 367h89c33.085938 0 60-26.914062 60-60v-43.402344c9.128906-1.851562 16-9.921875 16-19.597656v-70c0-11.046875-8.953125-20-20-20h-201c-11.046875 0-20 8.953125-20 20v70c0 9.675781 6.871094 17.746094 16 19.597656v43.402344c0 33.085938 26.914062 60 60 60zm89-40h-89c-11.027344 0-20-8.972656-20-20v-41h46v8c0 11.046875 8.953125 20 20 20s20-8.953125 20-20v-8h43v41c0 11.027344-8.972656 20-20 20zm-125-133h161v30h-161zm-176-60v-48c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v32.535156c19.679688-30.890625 45.8125-57.316406 76.84375-77.445312 41.4375-26.878906 89.554688-41.089844 139.15625-41.089844 68.378906 0 132.667969 26.628906 181.019531 74.980469 48.351563 48.351562 74.980469 112.640625 74.980469 181.019531 0 11.046875-8.953125 20-20 20s-20-8.953125-20-20c0-119.101562-96.898438-216-216-216-75.664062 0-145.871094 40.15625-184.726562 104h26.726562c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20h-48c-27.570312 0-50-22.429688-50-50zm512 244v47c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20v-33.105469c-19.789062 31.570313-46.289062 58.542969-77.84375 79.011719-41.4375 26.882812-89.554688 41.09375-139.15625 41.09375-68.339844 0-132.464844-26.644531-180.5625-75.023438-48-48.285156-74.4375-112.554687-74.4375-180.976562 0-11.046875 8.953125-20 20-20s20 8.953125 20 20c0 119.101562 96.449219 216 215 216 75.667969 0 145.871094-40.15625 184.726562-104h-26.726562c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h49c27.570312 0 50 22.429688 50 50zm0 0">
                                             </path>
                                         </svg>
-                                    </span> 10 Days return</li>
+                                    </span> GMP Certified</li>
                             </ul>
                         </div>
                     </div>
@@ -182,10 +185,8 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                                             id="qty-plus"></span></button>
                                     </div>
                                 </div>
-                                <button class="pa-btn" id="add_to_cart_modal"><i class="fa fa-cart-plus"></i>Add to
-                                    Cart</button>
+                                <a class="pa-btn" href="checkout.php?id=<?= $id ?>">Shop Now</a>
                             </div>
-
 
                             <span class="product-description">
                                 <?= $qry['description']; ?>
@@ -211,12 +212,14 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
 
                                 <li>
                                     <div class="pa-pro-wid-img">
-                                        <center><img src="assets/img/<?php echo $row['img_path'] ?>" alt="image" class="img-fluid"></center>
+                                        <center><img src="assets/img/<?php echo $row['img_path'] ?>" alt="image"
+                                                class="img-fluid"></center>
                                     </div>
                                     <div class="pa-pro-wid-content">
-                                        <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
+                                        <h4><a
+                                                href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                                         </h4>
-                                        <p>Ut enim ad minim veniam, quis nostrud exerci</p>
+                                        <p style="font-family: sans-serif;">Price: </span> ₹ <?= $row['price']; ?>/-</p>
                                     </div>
                                 </li>
                             <?php endwhile; ?>
@@ -252,9 +255,12 @@ $qry = $conn->query("SELECT * FROM  product_list where id = " . $_GET['id'])->fe
                 if (resp == 1)
                     toastMixin.fire({
                         animation: true,
-                        position: 'bottom',
-                        title: 'product addesd to the cart'
+                        position: 'top',
+                        title: 'product added to the cart'
                     });
+                window.setTimeout(function () {
+                    window.location.href = 'cart.php'
+                }, 3000);
                 $('.item_count').html(parseInt($('.item_count').html()) + parseInt($('[name="qty"]').val()))
                 $('.modal').modal('hide')
                 end_load()

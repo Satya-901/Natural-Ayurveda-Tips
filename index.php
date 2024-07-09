@@ -4,13 +4,13 @@
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assets/img/banner-1.png" class="d-block w-100" alt="Slide 1">
+            <img loading="lazy" src="assets/img/banner-1.png" class="d-block w-100" alt="Slide 1">
         </div>
         <div class="carousel-item">
             <img src="assets/img/banner-2.png" class="d-block w-100" alt="Slide 2">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/banner-3.png" class="d-block w-100" alt="Slide 2">
+            <img loading="lazy" src="assets/img/banner-3.png" class="d-block w-100" alt="Slide 2">
         </div>
     </div>
     <!-- Previous and Next buttons -->
@@ -30,26 +30,27 @@
         <div class="row justify-content-center">
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img style="height: 100px;" src="assets/img/kidney-stone.png" alt="" class="img-fluid" />
-                    <p><a href="#">Kidney Stone</a></p>
+                    <img loading="lazy" style="height: 100px;" src="assets/img/kidney-stone.png" alt=""
+                        class="img-fluid" />
+                    <p><a href="#">Kidney & Gallbladder Stones</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img style="height: 100px;" src="assets/img/stomach.png" alt="" class="img-fluid" />
-                    <p><a href="#">Stomach treatment</a></p>
+                    <img loading="lazy" style="height: 100px;" src="assets/img/stomach.png" alt="" class="img-fluid" />
+                    <p><a href="#">Stomach <br> Treatment</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img style="height: 100px;" src="assets/img/piles.png" alt="" class="img-fluid" />
-                    <p><a href="#">Piles treatment</a></p>
+                    <img loading="lazy" style="height: 100px;" src="assets/img/piles.png" alt="" class="img-fluid" />
+                    <p><a href="#">Piles <br>Treatment</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3">
                 <div class="pa-medicine-box">
-                    <img style="height: 100px;" src="assets/img/likoria.png" alt="" class="img-fluid" />
-                    <p><a href="#">Leukorrhea treatment</a></p>
+                    <img loading="lazy" style="height: 100px;" src="assets/img/likoria.png" alt="" class="img-fluid" />
+                    <p><a href="#">Leukorrhea Treatment</a></p>
                 </div>
             </div>
         </div>
@@ -57,9 +58,9 @@
 </div>
 
 <section class="image-section mb-3">
-    <img src="assets/img/card-banner1.jpg" alt="Placeholder Image 1">
-    <img src="assets/img/card-banner2.jpg" alt="Placeholder Image 2">
-    <img src="assets/img/card-banner3.jpg" alt="Placeholder Image 3">
+    <img loading="lazy" src="assets/img/card-banner1.jpg" alt="Placeholder Image 1">
+    <img loading="lazy" src="assets/img/card-banner2.jpg" alt="Placeholder Image 2">
+    <img loading="lazy" src="assets/img/card-banner3.jpg" alt="Placeholder Image 3">
 </section>
 
 <div class="bg-banner1">
@@ -75,8 +76,8 @@
 <div class="pa-trending-product mt-4" id="diseases">
     <div class="container">
         <div class="pa-heading">
-            <img src="assets/images/herbal.svg" alt="image" class="img-fluid">
-            <h1>Ayurvedic treatment</h1>
+            <img loading="lazy" src="assets/images/herbal.svg" alt="image" class="img-fluid">
+            <h1>Ayurvedic Treatment</h1>
         </div>
         <div class="row">
             <div class="swiper-container swiper-container-horizontal">
@@ -85,44 +86,44 @@
                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 440px;">
                         <div class="pa-product-box">
                             <div class="pa-product-img">
-                                <img src="WhatsApp Image 2024-07-01 at 16.59.56_74092bb4.jpg" alt="image"
+                                <img loading="lazy" src="WhatsApp Image 2024-07-01 at 16.59.56_74092bb4.jpg" alt="image"
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="">Piles treatment</a></h4>
+                                <h4><a href="">Piles Treatment</a></h4>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 440px;">
                         <div class="pa-product-box">
                             <div class="pa-product-img">
-                                <img src="WhatsApp Image 2024-07-01 at 16.59.57_f86305c2.jpg" alt="image"
+                                <img loading="lazy" src="WhatsApp Image 2024-07-01 at 16.59.57_f86305c2.jpg" alt="image"
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="">Stone treatment</a></h4>
+                                <h4><a href="">Stone Treatment</a></h4>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="0" style="width: 440px;">
                         <div class="pa-product-box">
                             <div class="pa-product-img">
-                                <img src="WhatsApp Image 2024-07-01 at 16.59.57_b3268ae0.jpg" alt="image"
+                                <img loading="lazy" src="WhatsApp Image 2024-07-01 at 16.59.57_b3268ae0.jpg" alt="image"
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="">Acidity treatment</a></h4>
+                                <h4><a href="">Digestive Treatment</a></h4>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 440px;">
                         <div class="pa-product-box">
                             <div class="pa-product-img">
-                                <img src="WhatsApp Image 2024-07-01 at 16.59.58_538ae164.jpg" alt="image"
+                                <img loading="lazy" src="WhatsApp Image 2024-07-01 at 16.59.58_538ae164.jpg" alt="image"
                                     class="img-fluid">
                             </div>
                             <div class="pa-product-content">
-                                <h4><a href="">Leukocoria treatment</a></h4>
+                                <h4><a href="">Leukocoria Treatment</a></h4>
                             </div>
                         </div>
                     </div>
@@ -139,7 +140,7 @@
 <div class="pa-product spacer-top">
     <div class="container">
         <div class="pa-heading">
-            <h1 class="text-light">top products</h1>
+            <h1 class="text-dark">products</h1>
         </div>
         <div class="row justify-content-center">
             <?php
@@ -160,10 +161,13 @@
                         <div class="pa-product-content">
                             <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </h4>
-                            <p style="font-family: sans-serif;">₹ <?php echo $row['price'] ?></p><br>
+                            <p style="font-family: sans-serif;">&#8377; <?php echo $row['price'] ?></p><br>
 
-                            <a style="    color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
-                                href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
+                            <a style="color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
+                                href="product-detail.php?id=<?php echo $row['id'] ?>">Details</a>
+
+                            <a href="checkout.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-dark btn-sm">Buy
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -175,28 +179,29 @@
 <div class="container-fluid quality-assurance">
     <div class="logo-container">
         <div class="logo-item">
-            <img src="assets/img/GMP.png" alt="GMP.png">
+            <img loading="lazy" src="assets/img/GMP.png" alt="GMP.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/natural.png" alt="natural.png">
+            <img loading="lazy" src="assets/img/natural.png" alt="natural.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/Vegan.png" alt="Vegan.png">
+            <img loading="lazy" src="assets/img/Vegan.png" alt="Vegan.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/make-in-india.png" alt="make-in-india.png">
+            <img loading="lazy" src="assets/img/make-in-india.png" alt="make-in-india.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/approved-by-ministry-of-ayush.png" alt="approved-by-ministry-of-ayush.png">
+            <img loading="lazy" src="assets/img/approved-by-ministry-of-ayush.png"
+                alt="approved-by-ministry-of-ayush.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/cash-on-delivery.png" alt="cash-on-delivery.png">
+            <img loading="lazy" src="assets/img/cash-on-delivery.png" alt="cash-on-delivery.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/free-shipping.png" alt="free-shipping.png">
+            <img loading="lazy" src="assets/img/free-shipping.png" alt="free-shipping.png">
         </div>
         <div class="logo-item">
-            <img src="assets/img/cruelty-free.png" alt="cruelty-free.png">
+            <img loading="lazy" src="assets/img/cruelty-free.png" alt="cruelty-free.png">
         </div>
     </div>
 </div>
@@ -204,8 +209,8 @@
 <div class="pa-counter spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
-            <img src="assets/images/herbal.svg" alt="image" class="img-fluid" />
-            <h1 class="text-light">Benefit from choosing the best</h1>
+            <img loading="lazy" src="assets/images/herbal.svg" alt="image" class="img-fluid" />
+            <h1>Benefit from choosing the best</h1>
             <h5>Our recent achievements</h5>
         </div>
         <div class="pa-counter-main" id="counter">
@@ -309,7 +314,7 @@
 <div class="pa-tesimonial spacer-top spacer-bottom">
     <div id="testimonials" class="container">
         <div class="pa-heading" style="margin-top: 80px;">
-            <img src="assets/img/herbal.svg" alt="image" class="img-fluid" />
+            <img loading="lazy" src="assets/img/herbal.svg" alt="image" class="img-fluid" />
             <h1>Hear from Our Patients</h1>
             <h5 style="color: #cea21c;">Discover How Natural Ayurveda Tips Transformed Lives.</h5>
         </div>
@@ -319,7 +324,8 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets\img\testimonials\testimonial-1.jpg" alt="image" class="img-fluid" />
+                                <img loading="lazy" src="assets\img\testimonials\testimonial-1.jpg" alt="image"
+                                    class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2> Ravi Shankar</h2>
@@ -332,7 +338,8 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets\img\testimonials\testimonial-2.jpg" alt="image" class="img-fluid" />
+                                <img loading="lazy" src="assets\img\testimonials\testimonial-2.jpg" alt="image"
+                                    class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Nikhil Maurya</h2>
@@ -345,7 +352,8 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets\img\testimonials\testimonial-3.jpg" alt="image" class="img-fluid" />
+                                <img loading="lazy" src="assets\img\testimonials\testimonial-3.jpg" alt="image"
+                                    class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Vikram Singh</h2>
@@ -358,7 +366,8 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets\img\testimonials\testimonial-4.jpg" alt="image" class="img-fluid" />
+                                <img loading="lazy" src="assets\img\testimonials\testimonial-4.jpg" alt="image"
+                                    class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Kavita Sharma</h2>
@@ -371,7 +380,8 @@
                     <div class="swiper-slide">
                         <div class="pa-tesimonial-box">
                             <div class="pas-testi-img">
-                                <img src="assets\img\testimonials\testimonial-5.jpg" alt="image" class="img-fluid" />
+                                <img loading="lazy" src="assets\img\testimonials\testimonial-5.jpg" alt="image"
+                                    class="img-fluid" />
                             </div>
                             <div class="pas-testi-content">
                                 <h2>Meera Jain</h2>
@@ -395,7 +405,7 @@
 <div class="pa-blog spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
-            <img src="assets/images/herbal.svg" alt="image" class="img-fluid" />
+            <img loading="lazy" src="assets/images/herbal.svg" alt="image" class="img-fluid" />
             <h1>latest news</h1>
             <h5>blog</h5>
         </div>

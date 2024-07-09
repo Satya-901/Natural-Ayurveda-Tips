@@ -38,10 +38,13 @@
                         <div class="pa-product-content">
                             <h4><a href="product-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </h4>
-                            <p>&#8377; <?php echo $row['price'] ?></p><br>
+                            <p style="font-family: sans-serif;">&#8377; <?php echo $row['price'] ?></p><br>
 
-                            <a style="    color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
-                                href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
+                            <a style="color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
+                                href="product-detail.php?id=<?php echo $row['id'] ?>">Details</a>
+
+                            <a href="checkout.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-dark btn-sm">Buy
+                                Now</a>
                         </div>
                     </div>
                 </div>

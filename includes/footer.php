@@ -44,10 +44,6 @@
         top: 160px;
     }
 
-    .float-ad {
-        top: 215px;
-    }
-
     .float-wp {
         top: 270px;
     }
@@ -57,7 +53,7 @@
     }
 
     .float-email {
-        top: 380px;
+        top: 215px;
     }
 </style>
 <!-- footer start -->
@@ -78,7 +74,7 @@
                             <a href="./#diseases">Diseases</a>
                         </li>
                         <li>
-                            <a href="products.php">Products</a>
+                            <a href="products.php">Shop</a>
                         </li>
                         <li>
                             <a href="blog.php">Blog</a>
@@ -116,13 +112,11 @@
                     <h2 class="pa-foot-title">Contact Information</h2>
                     <ul style="color: #ffffff;">
                         <li>
-                            <b>Phone:</b> 971883 2501
+                            <b>Phone:</b> <a href="tel:+919718832501">+91 9718832501</a>
                         </li>
                         <li>
-                            <b>Email:</b> Contact@naturalayurvedatips.com
-                        </li>
-                        <li>
-                            <b>Address:</b> G.B Nagar Uttar Pradesh 201301
+                            <b>Email:</b> <a
+                                href="mailto:Contact@naturalayurvedatips.com">Contact@naturalayurvedatips.com</a>
                         </li>
                     </ul>
                 </div>
@@ -149,7 +143,7 @@
 <!-- copyright end -->
 
 <!-- Floating Social Media bar Starts -->
-<div class="float-sm">
+<!-- <div class="float-sm">
     <div class="fl-fl float-fb">
         <svg width="25px" height="40px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -170,17 +164,6 @@
             </g>
         </svg>
         <a href="https://www.facebook.com/naturalayurvedtips" target="_blank"> Like us!</a>
-    </div>
-    <div class="fl-fl float-ad">
-        <svg width="25px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-                d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <a href="" target="_blank">G.B Nagar UP</a>
     </div>
     <div class="fl-fl float-wp">
         <svg width="25px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +194,7 @@
         </svg>
         <a href="mailto:Contact@naturalayurvedatips.com" target="_blank">Mail us</a>
     </div>
-</div>
+</div> -->
 <!-- Floating Social Media bar Ends -->
 
 <!-- login start -->
@@ -343,7 +326,7 @@
             },
             success: function (resp) {
                 if (resp == 1) {
-                    location.href = '<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : 'cart.php' ?>';
+                    location.href = '<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : 'checkout.php' ?>';
                 } else {
                     $('#signup-frm').prepend('<div class="alert alert-danger">Email already exist.</div>')
                     $('#signup-frm button[type="submit"]').removeAttr('disabled').html('Create');

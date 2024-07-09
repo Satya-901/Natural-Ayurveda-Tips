@@ -100,7 +100,6 @@ li {
     margin-bottom: 0;
     text-transform: capitalize;
     font-size: 20px;
-    color: var(--pureayurveda-primary);
 }
 
 .pa-heading img {
@@ -190,6 +189,12 @@ input::-webkit-inner-spin-button {
         flex: 1 1 100%;
     }
 }
+
+  @media (max-width: 767px) {
+        .bg-banner1-text {
+           padding: 20px 0 !important;
+        }
+    }
 
 /* yaha khatam ho raha hai */
 /* top header start */
@@ -735,7 +740,7 @@ p.pa-product-rating {
 }
 
 .pa-counter {
-    background-image: url(../img/bg-counter.png);
+    /*background-image: url(../img/bg-counter.png);*/
     background-size: cover;
     margin-bottom: 180px;
     background-position: center;
@@ -978,9 +983,6 @@ p.pa-product-rating {
     color: #fff;
 }
 
-.pa-foot-box a:hover {
-    color: var(--pureayurveda-primary);
-}
 
 .pa-foot-title {
     color: #fff;

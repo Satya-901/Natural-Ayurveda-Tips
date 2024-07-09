@@ -57,8 +57,8 @@
 <div class="pa-counter spacer-top spacer-bottom">
     <div class="container">
         <div class="pa-heading">
-            <img src="assets/images/herbal.svg" alt="image" class="img-fluid" />
-            <h1 class="text-light">Benefit from choosing the best</h1>
+            <img loading="lazy" src="assets/images/herbal.svg" alt="image" class="img-fluid" />
+            <h1>Benefit from choosing the best</h1>
             <h5>Our recent achievements</h5>
         </div>
         <div class="pa-counter-main" id="counter">

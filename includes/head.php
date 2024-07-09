@@ -40,16 +40,23 @@
             margin-top: 15px;
             height: 30px;
         }
+         .pa-ellipsis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
+    }
     </style>
 </head>
 
 <body>
     <!-- pre loader start -->
-    <div class="pa-preloader">
-        <div class="pa-ellipsis">
-            <center><img style="height: 150px;" src="assets/img/logo.png" alt="logo"></center>
-        </div>
-    </div>
+    <!--<div class="pa-preloader">-->
+    <!--    <div class="pa-ellipsis text-center">-->
+    <!--        <img style="height: 150px;" src="assets/img/logo.png" alt="logo">-->
+    <!--    </div>-->
+    <!--</div>-->
+
     <!-- pre loader end -->
     <!-- main wrapper start -->
     <div class="pa-main-wrapper"></div>

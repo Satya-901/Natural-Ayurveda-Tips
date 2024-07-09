@@ -1,3 +1,14 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "naturalayurvedatips";
 
-$conn = new mysqli('localhost', 'root', '', 'naturalayurvedatips') or die("Could not connect to mysql" . mysqli_error($conn));
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+?>
