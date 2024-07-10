@@ -1,5 +1,7 @@
-<?php include_once ('includes/head.php'); ?>
-<?php include_once ('includes/header.php'); ?>
+<?php
+include_once ('includes/head.php');
+include_once ('includes/header.php');
+?>
 
 <!-- breadcrumb start -->
 <div class="pa-breadcrumb">
@@ -31,7 +33,6 @@
                             </tr>
                         </thead>
                         <tbody>
-
                             <?php
                             if (isset($_SESSION['login_user_id'])) {
                                 $data = "where c.user_id = '" . $_SESSION['login_user_id'] . "' ";
@@ -55,6 +56,7 @@
                                         <?php echo $row['name'] ?>
                                     </td>
                                     <td><?php echo number_format($row['price'], 2) ?></td>
+
                                     <td>
                                         <div class="pa-cart-quantity">
                                             <div>
@@ -69,13 +71,17 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td style="font-family: sans-serif;">₹ <?php echo number_format($row['qty'] * $row['price'], 2) ?></td>
+                                    <td style="font-family: sans-serif;">₹
+                                        <?php echo number_format($row['qty'] * $row['price'], 2) ?>
+                                    </td>
                                     <td><a href="admin/ajax.php?action=delete_cart&id=<?php echo $row['cid'] ?>"
                                             class="rem_cart btn btn-sm btn-outline-danger"
                                             data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a></td>
                                 </tr>
                             <?php endwhile; ?>
-
+                            <tr>
+                                <td colspan="6"><a href="products.php" class="pa-btn">continue Shopping</a></td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="pa-garnd-total">
@@ -83,13 +89,8 @@
                             <span>Grant total:</span>
                             <span style="font-family: sans-serif;">₹ <?php echo number_format($total, 2) ?></span>
                         </p>
-                        <?php
-                        if (isset($_SESSION['login_user_id']) == 1) {
-                            echo '<a href="checkout.php" class="pa-btn">Proceed to checkout</a>';
-                        } else {
-                            echo '<button type="button" class="pa-btn" data-bs-toggle="modal" data-bs-target="#signupModal">Proceed to checkout</button>';
-                        }
-                        ?>
+
+                        <a class="pa-btn" href="checkout.php">checkout</a>
                     </div>
                 </div>
             </div>

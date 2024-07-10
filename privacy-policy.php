@@ -42,13 +42,14 @@
         <h4>How do I withdraw my consent?</h4>
         <p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the
             continued collection, use or disclosure of your information, at any time, by contacting us at
-            support@naturalayurvedatips.com</p>
+            <a href="mailto:contact@naturalayurvedatips.com">contact@naturalayurvedatips.com</a>
+        </p>
 
         <h3>Disclosure</h3>
         <p>We may disclose your personal information if we are required by law to do so or if you violate our Terms of
             Service.</p>
 
-        <h3>Payment & Security</h3>
+        <h3>Payment and Security</h3>
         <p>Sparkeytips.com is committed to provide you with the most secure experience.</p>
 
         <h3>Information security</h3>
@@ -73,7 +74,8 @@
 
         <h3>Questions and contact information</h3>
         <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a
-            complaint, or simply want more information, contact our customer support at support@naturalayurvedatips.com
+            complaint, or simply want more information, contact our customer support at <a
+                href="mailto:contact@naturalayurvedatips.com">contact@naturalayurvedatips.com</a>
         </p>
     </div>
 </div>

@@ -185,7 +185,9 @@ $qry = $conn->query("SELECT * FROM  product_list where id = $id")->fetch_array()
                                             id="qty-plus"></span></button>
                                     </div>
                                 </div>
-                                <a class="pa-btn" href="checkout.php?id=<?= $id ?>">Shop Now</a>
+
+                                <button class="pa-btn" id="add_to_cart_modal"><i class="fa fa-cart-plus"></i>Add to
+                                    Cart</button>
                             </div>
 
                             <span class="product-description">

@@ -5,34 +5,21 @@ include_once ('admin\db_connect.php');
 function sanitize_input($data)
 {
     global $conn;
-
     $data = trim($data);
-    // Escape special characters to prevent SQL injection
     $data = mysqli_real_escape_string($conn, $data);
-    // Strip HTML tags to prevent XSS attacks
     $data = strip_tags($data);
-
     return $data;
 }
-
-// Function to validate mobile number
 function validate_mobile($mobile)
 {
-    // Simple mobile number validation (adjust as per your requirements)
     return preg_match('/^[0-9]{10}$/', $mobile);
 }
-
-// Function to validate pincode
 function validate_pincode($pincode)
 {
-    // Simple pincode validation (adjust as per your requirements)
     return preg_match('/^[1-9][0-9]{5}$/', $pincode);
 }
-
-// Function to validate email address
 function validate_email($email)
 {
-    // Validate email address format using PHP's built-in filter function
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
@@ -49,19 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pincode = sanitize_input($_POST['pincode']);
     $payment_method = sanitize_input($_POST['payment_method']);
     $product_name = sanitize_input($_POST['product_name']);
-    $product_price = sanitize_input($_POST['product_price']);
+    $product_price = sanitize_input($_POST['total_price']);
 
-
-    // Validate mobile number
     if (!validate_mobile($mobile)) {
         $errors[] = "Invalid mobile number format.";
     }
-
-    // Validate pincode
     if (!validate_pincode($pincode)) {
         $errors[] = "Invalid pincode format.";
     }
-
     // Validate email address
     if (!validate_email($email)) {
         $errors[] = "Invalid email address.";

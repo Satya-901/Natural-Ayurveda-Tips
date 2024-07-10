@@ -47,10 +47,6 @@
                     <h5>Phone</h5>
                     <p>971883 2501</p>
                 </div>
-                <div class="newsletter-box">
-                    <h5>Address</h5>
-                    <p>G.B Nagar Uttar Pradesh 201301</p>
-                </div>
             </div>
         </div>
     </div>

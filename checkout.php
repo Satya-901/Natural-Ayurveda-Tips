@@ -1,14 +1,24 @@
 <?php
 include_once ('includes/head.php');
 include_once ('includes/header.php');
+// Check if the cart is empty
+if (isset($_SESSION['login_user_id'])) {
+    $user_id = $_SESSION['login_user_id'];
+    $cart_query = "SELECT COUNT(*) as count FROM cart WHERE user_id = '$user_id'";
+} else {
+    $ip = isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : (isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR']);
+    $cart_query = "SELECT COUNT(*) as count FROM cart WHERE client_ip = '$ip'";
+}
 
-// Check if 'id' is present in the URL
-if (!isset($_GET['id']) || empty($_GET['id'])) {
-    echo '<script type="text/javascript">
-            alert("Please select a product to proceed to checkout.");
-            window.location.href = "products.php"; // Redirect to your products page
-            </script>';
-    exit; // Ensure no further code is executed
+$cart_result = $conn->query($cart_query);
+$cart_data = $cart_result->fetch_assoc();
+
+if ($cart_data['count'] == 0) {
+    echo "<script>
+    alert('Your cart is empty. Please add items to your cart before proceeding to checkout.');
+    window.location.href = 'products.php';
+        </script>";
+    exit();
 }
 ?>
 <!-- breadcrumb start -->
@@ -29,7 +39,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
         <div class="row">
             <div class="col-lg-6">
                 <div class="pa-bill-form">
-                    <form method="post" action="process_order.php">
+                    <form method="post" action="cart_process_order.php">
                         <label class="pa-bill-title">
                             Billing details
                         </label>
@@ -69,10 +79,6 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                         </label>
                 </div>
             </div>
-            <?php
-            // Assuming $conn is your database connection
-            $qry = $conn->query("SELECT * FROM product_list where id = " . $_GET['id'])->fetch_array();
-            ?>
             <div class="col-lg-6">
                 <div class="pa-bill-detail">
                     <p class="pa-bill-title">Order details</p>
@@ -84,15 +90,31 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><?php echo $qry['name'] ?></td>
-                                <td style="font-family: maths;">₹ <?= $qry['price']; ?>/-</td>
-                                <input type="hidden" name="product_name" value="<?= $qry['name']; ?>">
-                                <input type="hidden" name="product_price" value="<?= $qry['price']; ?>">
-                            </tr>
+                            <?php
+                            if (isset($_SESSION['login_user_id'])) {
+                                $data = "where c.user_id = '" . $_SESSION['login_user_id'] . "' ";
+                            } else {
+                                $ip = isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : (isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR']);
+                                $data = "where c.client_ip = '" . $ip . "' ";
+                            }
+                            $total = 0;
+                            $get = $conn->query("SELECT *,c.id as cid FROM cart c inner join product_list p on p.id = c.product_id " . $data);
+                            while ($row = $get->fetch_assoc()):
+                                $total += ($row['qty'] * $row['price']);
+                                ?>
+                                <tr>
+                                    <td><?php echo $row['name'] ?></td>
+                                    <td style="font-family: maths;">₹ <?php echo number_format($row['price'], 2) ?>/-</td>
+                                    <input type="hidden" name="product_name[]" value="<?= $row['name']; ?>">
+                                    <input type="hidden" name="product_price[]" value="<?= $row['price']; ?>">
+                                </tr>
+                            <?php endwhile; ?>
                             <tr class="pa-checkout-total">
                                 <td>Grand Total</td>
-                                <td style="font-family: maths;">₹ <?= $qry['price']; ?>/-</td>
+                                <td style="font-family: maths;">
+                                    ₹ <?php echo number_format($total, 2) ?>/-
+                                    <input name="total_price" type="hidden" value="<?= $total ?>">
+                                </td>
                             </tr>
                         </tbody>
                     </table>

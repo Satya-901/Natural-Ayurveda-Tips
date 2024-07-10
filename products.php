@@ -41,10 +41,7 @@
                             <p style="font-family: sans-serif;">&#8377; <?php echo $row['price'] ?></p><br>
 
                             <a style="color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
-                                href="product-detail.php?id=<?php echo $row['id'] ?>">Details</a>
-
-                            <a href="checkout.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-dark btn-sm">Buy
-                                Now</a>
+                                href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -52,5 +49,40 @@
         </div>
     </div>
 </div>
-
+<script>
+    $('#qty-minus').click(function () {
+        var qty = $('input[name="qty"]').val();
+        if (qty == 1) {
+            return false;
+        } else {
+            $('input[name="qty"]').val(parseInt(qty) - 1);
+        }
+    })
+    $('#qty-plus').click(function () {
+        var qty = $('input[name="qty"]').val();
+        $('input[name="qty"]').val(parseInt(qty) + 1);
+    })
+    $('#add_to_cart_modal').click(function () {
+        start_load()
+        $.ajax({
+            url: 'admin/ajax.php?action=add_to_cart',
+            method: 'POST',
+            data: { pid: '<?php echo $_GET['id'] ?>', qty: $('[name="qty"]').val() },
+            success: function (resp) {
+                if (resp == 1)
+                    toastMixin.fire({
+                        animation: true,
+                        position: 'top',
+                        title: 'product added to the cart'
+                    });
+                window.setTimeout(function () {
+                    window.location.href = 'cart.php'
+                }, 3000);
+                $('.item_count').html(parseInt($('.item_count').html()) + parseInt($('[name="qty"]').val()))
+                $('.modal').modal('hide')
+                end_load()
+            }
+        })
+    })
+</script>
 <?php include_once ('includes/footer.php'); ?>

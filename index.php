@@ -164,10 +164,7 @@
                             <p style="font-family: sans-serif;">&#8377; <?php echo $row['price'] ?></p><br>
 
                             <a style="color: #fff; background-color: #684427; border-color: #684427;" class="btn btn-sm"
-                                href="product-detail.php?id=<?php echo $row['id'] ?>">Details</a>
-
-                            <a href="checkout.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-dark btn-sm">Buy
-                                Now</a>
+                                href="product-detail.php?id=<?php echo $row['id'] ?>">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -421,7 +418,7 @@
                         <div class="pa-blog-box">
                             <img style="height: 273px;" src="assets/img/<?= $row["image"] ?>" alt="" class="img-fluid">
                             <div class="pa-blog-title">
-                                <h2><a href="blog-detail.php?id=<?= $row["id"]; ?>"><?= $row["title"] ?></a></h2>
+                                <h2><a href="blog-detail.php?id=<?= $row["id"]; ?>"><?= $row["title"] ?>.</a></h2>
                             </div>
                         </div>
                     </div>

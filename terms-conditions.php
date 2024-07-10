@@ -5,10 +5,10 @@
 <div class="pa-breadcrumb">
     <div class="container-fluid">
         <div class="pa-breadcrumb-box">
-            <h1>Terms & Conditions</h1>
+            <h1>Terms and Conditions</h1>
             <ul>
                 <li><a href="./">Home</a></li>
-                <li>Terms & Conditions</li>
+                <li>Terms and Conditions</li>
             </ul>
         </div>
     </div>
@@ -198,8 +198,8 @@
 
         <h2>Governing Law and Jurisdiction</h2>
         <p>Terms and conditions, policies and notices or any matter related to or in connection therewith shall be
-            referred to and finally resolved by arbitration as per the Arbitration & Conciliation Act, 1996 and shall be
-            conducted by the Indian Institute of Arbitration & Mediation, in accordance with their Arbitration Rules
+            referred to and finally resolved by arbitration as per the Arbitration and Conciliation Act, 1996 and shall be
+            conducted by the Indian Institute of Arbitration and Mediation, in accordance with their Arbitration Rules
             (“IIAM Arbitration Rules”) for the time being in force and the Courts in Cochin will have exclusive
             jurisdiction to deal the dispute arising there from. The Arbitration venue shall be in Cochin and the
             language of Arbitration shall be in English.</p>
@@ -212,7 +212,7 @@
             changes to these Terms of Service constitutes acceptance of those changes.</p>
 
         <h2>Contact Information</h2>
-        <p>Questions about the Terms of Service should be sent to us at support@naturalayurvedatips.com</p>
+        <p>Questions about the Terms of Service should be sent to us at <a href="mailto:contact@naturalayurvedatips.com">contact@naturalayurvedatips.com</a></p>
     </div>
 </div>
 

@@ -36,3 +36,10 @@
 [09-Jul-2024 06:43:59 UTC] PHP Notice:  Undefined index: login_name in /home/natur124/public_html/admin/home.php on line 113
 [09-Jul-2024 06:43:59 UTC] PHP Notice:  Undefined index: setting_cover_img in /home/natur124/public_html/admin/home.php on line 180
 [09-Jul-2024 06:43:59 UTC] PHP Notice:  Undefined index: setting_cover_img in /home/natur124/public_html/admin/home.php on line 180
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: setting_name in /home/natur124/public_html/admin/topbar.php on line 32
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: setting_name in /home/natur124/public_html/admin/topbar.php on line 37
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: login_name in /home/natur124/public_html/admin/topbar.php on line 40
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: login_type in /home/natur124/public_html/admin/navbar.php on line 16
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: login_name in /home/natur124/public_html/admin/home.php on line 113
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: setting_cover_img in /home/natur124/public_html/admin/home.php on line 180
+[09-Jul-2024 16:41:55 UTC] PHP Notice:  Undefined index: setting_cover_img in /home/natur124/public_html/admin/home.php on line 180

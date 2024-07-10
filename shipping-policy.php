@@ -22,14 +22,14 @@
                 <div class="policy-section">
                     <p>We want you to love the products that you buy from us. In case you are not satisfied with your
                         purchase, drop us a mail within 2 days of delivery with details at <a
-                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> with
+                            href="mailto:contact@naturalayurvedatips.com">contact@naturalayurvedatips.com</a> with
                         “Returns and Replacement” as a subject and we will get back to you</p>
                 </div>
 
                 <div class="policy-section">
                     <h3>In case you received the wrong item</h3>
                     <p>Drop us an email at <a
-                            href="mailto:support@naturalayurvedatips.com">support@naturalayurvedatips.com</a> or call us
+                            href="mailto:contact@naturalayurvedatips.com">contact@naturalayurvedatips.com</a> or call us
                         at <a href="tel:+91971883-2501"> 971883-2501</a> within 2 days of the date of
                         delivery. Our Customer delight team will resolve it at the earliest.</p>
                 </div>
@@ -37,7 +37,7 @@
                 <div class="policy-section">
                     <h3>In case you received a damaged item</h3>
                     Drop us an email with your order id and the picture of the damaged product at
-                    <a href="mailto:support@naturalayurvedatips.com"> or call at <a href="tel:+91971883-2501">
+                    <a href="mailto:contact@naturalayurvedatips.com"> or call at <a href="tel:+919718832501">
                             971883-2501</a> within 2 days of the date of delivery. Our customer
                         delight team will help you with your queries and resolve them at the earliest.
                 </div>
